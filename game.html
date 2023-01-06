@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Game Development</title>
+        <link rel="icon" type="image/x-icon" href="Favicon logo.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="aboutme.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet"   href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+        <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+        <link rel="preconnect" href="https//fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <button onclick="topFunction()" id="progress" title="Go to top">&#x1F815;</button>
+
+        <!----Main section start---->
+        <div class="banner" id="banner">
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="game.mp4" type="video/mp4">
+            </video>
+            <div class="navbar">
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="#project">Project</a></li> 
+                    <li><a href="#contact">Contact Me</a></li>
+                <ul>
+            </div> 
+            <div class="content">
+                <h4>Get to know more</h4><h1>Game Development</h1>
+                <p>A University student who want to improve himself.</p>
+                <div>
+                    <a href="#period"><button type="button" class="normalbutton"><span></span>????</button></a>
+                    <a href="#second"><button type="button" class="normalbutton"><span></span>??????</button></a><br> 
+                    <button type="button" class="followbutton"><span class="followspan"></span>Contact Me</button>                        
+                </div>
+            </div> 
+        </div>
+
+
+
+
+
+        <footer>
+            <p>Low Weng Chee</p>
+            <p>For more information about me - please click on the link below to follow my channel:</p>
+            <div class="social">
+                <a href="https://www.facebook.com/low.wengchee" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/wclow_0420/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/wclow0420" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="end">Copy Right By Low Weng Chee</p>
+        </footer>
+
+
+
+        <script>
+        // Get the button
+        let mybutton = document.getElementById("progress");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "grid";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+                        
+        </script>
+
+
+    </body>
+</html>
