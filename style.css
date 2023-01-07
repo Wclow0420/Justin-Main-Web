@@ -88,6 +88,31 @@
     transform: scale(1.2);
 }
 
+@media only screen and (max-width: 768px) {
+    #progress{
+        display: none;
+        position: relative;
+        bottom: 20px;
+        right: 100px;
+        height: 50px;
+        width: 50px;
+        z-index: 100;
+        place-items: center;
+        border-radius: 50%;
+        font-size: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: #f9004d;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    .bttn{
+        display: none;
+    }
+    #progress:hover{
+        transform: none;
+    }
+    
+}
 html {
     scroll-behavior: smooth;
    }
@@ -173,7 +198,23 @@ html {
     .navbar{
         padding-top: 20px;
     }
+    .back-video{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        height: 100vh;
+        background-color: #101010;
+        /* background-size: cover;
+        background-position: center; */
     
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 10 20px;
+        position: relative;
+    }
 }
 
 .content{
@@ -188,15 +229,15 @@ html {
 
 .content h4{
     color: white;
-    letter-spacing: 0.1vw;
-    font-size: 1.4vw;
+    letter-spacing: 1px;
+    font-size: 20px;
     margin-top: 100px;
     margin: 20px 0px 20px;
 }
 
 .content h1{
     color: white;
-    font-size: 7vw;
+    font-size: 70px;
     margin-top: 10px;
 }
 
@@ -262,17 +303,43 @@ span{
 }
 
 @media only screen and (max-width: 768px) {
+    .content h4{
+        font-size: 4vw;
+    }
     .content{
-        top: 60%;
+        top: 40%;
     }
     .banner{
-        height: 150vw;
+        height: 170vw;
     }
     .content h1{
         color: white;
-        font-size: 12vw;
+        font-size: 8vw;
         margin-top: 10px;
     }
+    .content p{
+        font-size: 1vw;
+    }
+    
+@media only screen and (max-width: 500px) {
+    .content{
+        top: 65%;
+    }
+}
+.normalbutton{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer; 
+    position: relative;
+    overflow: hidden;   
+}
 }
 
 .about{
@@ -338,9 +405,8 @@ span{
     .about-text{
         display: block;
         width: 100%;
-        max-width: 500px;
         align-content: center;
-        float: right;
+
     }
     .about{
         height: 1100px;
@@ -353,7 +419,7 @@ span{
     }
     .about-text h2{
         color: white;
-        font-size: 50px;
+        font-size: 45px;
         text-transform: capitalize;
         margin-bottom: 20px;
     }
@@ -361,16 +427,17 @@ span{
     .about-text h5{
         color: white;
         letter-spacing: 2px;
-        font-size: 15px;
+        font-size: 13px;
         margin-bottom: 25px;
         text-transform: capitalize;
     }
     
     .about-text p{
         color: #fcfc;
+        width: auto;
         letter-spacing: 1px;
         line-height: 28px;
-        font-size: 8px;
+        font-size: 10px;
         margin-bottom: 45px;
     }
     
@@ -385,7 +452,7 @@ span{
 .title{
     color: white;
     font-size: 40px;
-    width: 1130px;
+    width: 100%;
     margin: 30px auto;
     text-align: center;
 }
@@ -395,6 +462,8 @@ span{
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    position: relative;
+    width: 100%;
 }
 
 .card{
@@ -447,6 +516,28 @@ h5{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    .title h2{
+        font-size: 50px;
+    }
+    .project{
+        height: 1400px;
+    }
+    .box{
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    .card{
+        height: 365px;
+        width: 92%;
+        padding: 10px 0;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+}
 .contact-me{
     width: 100%;
     height: 290px;
@@ -481,6 +572,13 @@ h5{
     cursor: pointer;
 }
 
+@media only screen and (max-width: 768px) {
+    .contact-me p{
+        font-size: 4vw;
+        position: relative;
+    }
+}
+
 footer{
     position: relative;
     width: 100%;
@@ -490,6 +588,10 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.white{
+    color: #fff;
 }
 
 footer p:nth-child(1){
@@ -535,4 +637,22 @@ footer p:nth-child(2){
     color: #f9004d;
     bottom: 35px;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    footer p:nth-child(1){
+        font-size: 5vw;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    footer p:nth-child(2){
+        color: white;
+        font-size: 3vw;
+        width: 80%;
+        text-align: center;
+        line-height: 26px;
+    }
+
 }
