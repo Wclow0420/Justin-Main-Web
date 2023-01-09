@@ -19,9 +19,11 @@
         
         <!----Main section start---->
         <div class="banner" id="banner">
-            
             <video autoplay loop muted plays-inline class="back-video">
                 <source src="main.mp4" type="video/mp4">
+            </video>
+            <video autoplay loop muted plays-inline class="back-videoo">
+                <source src="main_p.mp4" type="video/mp4">
             </video>
             <div class="navbar" id="navbar">
                 <img src="logo.png" class="logo">
@@ -170,8 +172,9 @@
                 scrollTrigger: {
                     trigger: ".content",
                     start:"bottom bottom",
-                    toggleActions: "restart none restart none"
-                    
+                    toggleActions: "restart none restart none",
+                    once: true,
+
                 },
                 y:-200,
                 duration:1.5,
@@ -182,7 +185,8 @@
                 scrollTrigger: {
                     trigger: ".about img",
                     start:"20px 80%",
-                    toggleActions: "restart none restart none"
+                    toggleActions: "restart none restart none",
+                    once: true,
                 },
                 x:-100,
                 duration:3,
@@ -192,7 +196,8 @@
                 scrollTrigger: {
                     trigger: ".about",
                     start:"20px 80%",
-                    toggleActions: "restart none none none"
+                    toggleActions: "restart none none none",
+                    once: true,
                 },
                 x:0,
                 duration:3,
@@ -202,7 +207,8 @@
                 scrollTrigger: {
                     trigger: ".about-text",
                     start:"20px 80%",
-                    toggleActions: "restart none restart none"
+                    toggleActions: "restart none restart none",
+                    once: true,
                 },
                 x:150,
                 duration:2,
@@ -212,7 +218,8 @@
                 scrollTrigger: {
                     trigger: ".title",
                     start:"top 70%",
-                    toggleActions: "restart none restart none"
+                    toggleActions: "restart none restart none",
+                    once: true,
                 },
                 x:100,
                 duration:2,
@@ -226,7 +233,8 @@
                 scrollTrigger: {
                     trigger: ".title",
                     start:"top bottom",
-                    toggleActions: "restart none restart none"
+                    toggleActions: "restart none restart none",
+                    once: true,
                 },
                 y: 200,
                 duration:2,

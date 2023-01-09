@@ -24,6 +24,9 @@
             <video autoplay loop muted plays-inline class="back-video">
                 <source src="aboutme.mp4" type="video/mp4">
             </video>
+            <video autoplay loop muted plays-inline class="back-videoo">
+                <source src="aboutme_p.mp4" type="video/mp4">
+            </video>
             <div class="navbar">
                 <img src="logo.png" class="logo">
                 <ul>
@@ -178,77 +181,9 @@
 
 
         <section class="skill">
-            <h3>Personal Skills</h3>
-            <div id="movetable">
-                <table id="tablea">
-                    <tbody>
-                        <tr>
-                            <td>1999</td>
-                            <td>Asia's Best Rising Restaurant Award</td>
-                        </tr>
-                        <tr>
-                            <td>1999</td>
-                            <td>Outstanding Restaurateur Award</td>
-                        </tr>
-                        <tr>
-                            <td>2000</td>
-                            <td>Rising Star Chef of the Year Award</td>
-                            <td>Chef Low Weng Chee</td>
-                        </tr>
-                        <tr>
-                            <td>2000</td>
-                            <td>Outstanding Hospitality Award</td>
-                        </tr>
-                        <tr>
-                            <td>2001</td>
-                            <td>Best Asia's Chef Award</td>
-                            <td>Chef Low Weng Chee</td>
-                        </tr>
-                        <tr>
-                            <td>2003</td>
-                            <td>Best Pasta Award</td>
-                        </tr>
-                        <tr>
-                            <td>2005</td>
-                            <td>Best Pizza Award (Asia)</td>
-                        </tr>
-                        <tr>
-                            <td>2006</td>
-                            <td>Outstanding Chef Award</td>
-                            <td>Chef Bruse Gan</td>
-                        </tr>
-                        <tr>
-                            <td>2007</td>
-                            <td>Oustanding Bar Program (Asia)</td>
-                        </tr>
-                        <tr>
-                            <td>2008</td>
-                            <td>Michelin Star Award</td>
-                            <td>Chef Low Weng Chee</td>
-                        </tr>
-                        <tr>
-                            <td>2009</td>
-                            <td>Outstanding Restaurant Award</td>
-                        </tr>
-                        <tr>
-                            <td>2012</td>
-                            <td>Michelin Star Award</td>
-                            <td>Chef Low Weng Chee</td>
-                        </tr>
-                        <tr>
-                            <td>2014</td>
-                            <td>Best Lasagne Award</td>
-                        </tr>
-                        <tr>
-                            <td>2015</td>
-                            <td>Outstanding Recipe Award</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-            </div>
+            <h3>Resume</h3>
             <div class="cv">
-            <a href="resume.pdf" download="Low Weng Chee_Resume">
+            <a href="resume.pdf" target="_blank" download="Low Weng Chee_Resume">
                 <button class="downloadbut"><i class="fa-solid fa-cloud-arrow-down"></i> CV</button></a>
             </div>
 
@@ -299,7 +234,8 @@
                 scrollTrigger: {
                     trigger: ".container .lefttwo",
                     start:"80px 80%",
-                    toggleActions: "restart none none restart"
+                    toggleActions: "restart none none restart",
+                    once: true,
                 },
                 x:-200,
                 duration:1.5,
@@ -309,7 +245,8 @@
                 scrollTrigger: {
                     trigger: ".content",
                     start:"80px 80%",
-                    toggleActions: "restart none restart none"
+                    toggleActions: "restart none restart none",
+                    once: true,
                 },
                 x:-200,
                 duration:1.5,
@@ -319,7 +256,8 @@
                 scrollTrigger: {
                     trigger: ".period h4",
                     start:"80px 80%",
-                    toggleActions: "restart none restart none"
+                    toggleActions: "restart none restart none",
+                    once: true,
                 },
                 x:-200,
                 duration:1.5,
@@ -329,7 +267,8 @@
                 scrollTrigger: {
                     trigger: ".period",
                     start:"60px 80%",
-                    toggleActions: "restart none none restart"
+                    toggleActions: "restart none none restart",
+                    once: true,
                 },
                 x:-200,
                 duration:1,
@@ -339,7 +278,8 @@
                 scrollTrigger: {
                     trigger: ".container .leftone",
                     start:"50px 80%",
-                    toggleActions: "restart none none restart"
+                    toggleActions: "restart none none restart",
+                    once: true,
                 },
                 x:300,
                 duration:2,
@@ -349,7 +289,8 @@
                 scrollTrigger: {
                     trigger: ".container .rightone",
                     start:"30px 80%",
-                    toggleActions: "restart none none restart"
+                    toggleActions: "restart none none restart",
+                    once: true,
                 },
                 x:-300,
                 duration:2.5,
@@ -359,7 +300,8 @@
                 scrollTrigger: {
                     trigger: ".second",
                     start:"80px 80%",
-                    toggleActions: "restart none none none"
+                    toggleActions: "restart none none none",
+                    once: true,
                 },
                 y:200,
                 duration:1,
@@ -369,7 +311,8 @@
                 scrollTrigger: {
                     trigger: ".period",
                     start:"80px 80%",
-                    toggleActions: "restart none none none"
+                    toggleActions: "restart none none none",
+                    once: true,
                 },
                 x:0,
                 duration:1,
@@ -389,7 +332,8 @@
                 scrollTrigger: {
                     trigger: ".skill",
                     start:"80px 80%",
-                    toggleActions: "restart none none restart"
+                    toggleActions: "restart none none restart",
+                    once: true,
                 },
                 x:-200,
                 duration:1.5,

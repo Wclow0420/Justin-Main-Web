@@ -24,6 +24,9 @@
             <video autoplay loop muted plays-inline class="back-video">
                 <source src="game.mp4" type="video/mp4">
             </video>
+            <video autoplay loop muted plays-inline class="back-videoo">
+                <source src="game_p.mp4" type="video/mp4">
+            </video>
             <div class="navbar">
                 <img src="logo.png" class="logo">
                 <ul>
@@ -60,7 +63,9 @@
         </footer>
 
 
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Observer.min.js"></script>
         <script>
         // Get the button
         let mybutton = document.getElementById("progress");
@@ -81,7 +86,19 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         }
-                        
+                     
+        
+        gsap.from(".content",{
+                scrollTrigger: {
+                    trigger: ".content",
+                    start:"80px 80%",
+                    toggleActions: "restart none restart none",
+                    once: true,
+                },
+                x:-200,
+                duration:1.5,
+            });
+
         </script>
 
 

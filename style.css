@@ -124,6 +124,9 @@ html {
     z-index: -1;
 }
 
+.back-videoo{
+    display: none;
+}
 @media (min-aspect-ratio: 16/9){
     .back-video{
         width: 100%;
@@ -137,6 +140,28 @@ html {
         height: auto;
     }
 }
+
+@media (min-width: 768px) {
+    .back-video {
+      display: block;
+    }
+    .back-videoo {
+      display: none;
+    }
+  }
+
+@media (max-width: 768px) {
+    .back-video {
+      display: none;
+    }
+    .back-videoo {
+        width: 100%;
+        height: auto;
+      display: block;
+      position: absolute;
+    }
+}
+
 .navbar{
     width: 90%;
     margin: auto;
@@ -185,16 +210,14 @@ html {
     .logo{
         width: 70px;
         padding-left: 10px;
+        position: relative;
     }
     .navbar{
         padding-top: 20px;
     }
-    .back-video{
-        display: none;
-    }
     .banner{
         width: 100%;
-        height: 100vh;
+        height: 130vh;
         background-color: #101010;
         /* background-size: cover;
         background-position: center; */
@@ -305,13 +328,14 @@ span{
     }
     .content h1{
         color: white;
-        font-size: 8vw;
+        font-size: 10vw;
         margin-top: 10px;
     }
     .content p{
-        font-size: 1vw;
+        font-size: 4vw;
     }
-    
+
+}
 @media only screen and (max-width: 500px) {
     .content{
         top: 65%;
@@ -331,7 +355,7 @@ span{
     position: relative;
     overflow: hidden;   
 }
-}
+
 
 .about{
     width: 100%;
@@ -527,7 +551,7 @@ h5{
         position: relative;
         overflow: hidden;
         text-align: center;
-        background: #381274;
+        background: #3b3b3b;
     }
 }
 .contact-me{
@@ -630,7 +654,6 @@ footer p:nth-child(2){
     bottom: 35px;
     font-size: 14px;
 }
-
 @media only screen and (max-width: 768px) {
     footer p:nth-child(1){
         font-size: 5vw;
@@ -645,6 +668,9 @@ footer p:nth-child(2){
         width: 80%;
         text-align: center;
         line-height: 26px;
+    }
+    .back-video{
+        display: none;
     }
 
 }
