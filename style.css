@@ -527,7 +527,7 @@ h5{
         position: relative;
         overflow: hidden;
         text-align: center;
-        background: #fff;
+        background: rgba(7, 115, 134, 0);
     }
 }
 .contact-me{
