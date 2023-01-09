@@ -92,25 +92,16 @@
     #progress{
         display: none;
         position: relative;
-        bottom: 20px;
-        right: 100px;
-        height: 50px;
-        width: 50px;
-        z-index: 100;
+        bottom: 0;
+        right: 0;
+        height: 0;
+        width: 0;
+        z-index: 0;
         place-items: center;
-        border-radius: 50%;
-        font-size: 25px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        background-color: #f9004d;
-        cursor: pointer;
-        transition: 0.4s;
     }
     .bttn{
         display: none;
-    }
-    #progress:hover{
-        transform: none;
-    }
+    } 
     
 }
 html {
@@ -536,6 +527,7 @@ h5{
         position: relative;
         overflow: hidden;
         text-align: center;
+        background: rgba(255, 255, 255, 0.146);
     }
 }
 .contact-me{
